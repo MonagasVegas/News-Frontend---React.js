@@ -3,12 +3,10 @@ import { connect } from "react-redux";
 import { Grid, withStyles } from "@material-ui/core";
 import { styles } from "./constants";
 
-import Header from '../Header';
-import Home from '../Home';
-import CustomizedSelects from '../CustomizedSelects';
-
-
-
+import Header from "../Header";
+import Home from "../Home";
+import CustomizedSelects from "../CustomizedSelects";
+import PaginationNews from "../PaginationNews";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -19,11 +17,13 @@ class Dashboard extends Component {
   render() {
     return (
       <Grid container>
-        <Header />
-        <Home />
-        <br /><br /><br /><br />
-        <CustomizedSelects />
-        
+          <Header />
+          <Home />
+          <br /><br /><br /><br />
+          <CustomizedSelects />
+        <Grid item xs={12}>
+          <PaginationNews />
+        </Grid>
       </Grid>
     );
   }
