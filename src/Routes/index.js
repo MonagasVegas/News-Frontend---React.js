@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Dashboard from "../Components/Dashboard";
-import PaginationNews from "../Components/PaginationNews";
+import NewsLetters from "../Components/NewsLetters";
 
 class routes extends Component {
   render() {
@@ -10,7 +10,7 @@ class routes extends Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/das" element={<PaginationNews />} />
+          <Route path="/das" element={<NewsLetters />} />
         </Routes>
       </BrowserRouter>
     );
