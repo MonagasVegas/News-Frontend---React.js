@@ -26,7 +26,7 @@ class MyFaves extends Component {
                 <CardContent className={classes.conte}>
                   <Typography variant="subtitle1" color="textSecondary">
                     <AiOutlineClockCircle />
-                    &nbsp;&nbsp;  1 hours ago by author
+                    &nbsp;&nbsp;1 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Realize for React for Visualizing State flow and component
@@ -48,7 +48,7 @@ class MyFaves extends Component {
                 <CardContent className={classes.conte}>
                   <Typography variant="subtitle1" color="textSecondary">
                     <AiOutlineClockCircle />
-                    &nbsp;&nbsp;   3 hours ago by author
+                    &nbsp;&nbsp;3 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Yes, React is taking over front-end development. The
@@ -74,7 +74,7 @@ class MyFaves extends Component {
                 <CardContent className={classes.conte}>
                   <Typography variant="subtitle1" color="textSecondary">
                     <AiOutlineClockCircle />
-                    &nbsp;&nbsp;   2 hours ago by author
+                    &nbsp;&nbsp;2 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Event-driven state management in React using Storeon
@@ -94,17 +94,17 @@ class MyFaves extends Component {
           <Grid item xs={12} sm={7} md={7} lg={7}>
             <Card className={classes.roote2}>
               <div className={classes.detailes}>
-                <CardContent className={classes.conte}>
+                <CardContent className={classes.box}>
                   <Typography variant="subtitle1" color="textSecondary">
                     <AiOutlineClockCircle />
-                    &nbsp;&nbsp;   2 hours ago by author
+                    &nbsp;&nbsp;2 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     From chaos to free will
                   </Typography>
                 </CardContent>
               </div>
-              <div className={classes.rectan}>
+              <div className={classes.rectang}>
                 <div>
                   <img src={imagen} alt="" className={classes.image} />
                 </div>
@@ -120,7 +120,7 @@ class MyFaves extends Component {
                 <CardContent className={classes.conte}>
                   <Typography variant="subtitle1" color="textSecondary">
                     <AiOutlineClockCircle />
-                    &nbsp;&nbsp;   3 hours ago by author
+                    &nbsp;&nbsp;3 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     All the fundamental React.js concepts, jammed into this

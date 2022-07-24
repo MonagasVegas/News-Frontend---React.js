@@ -10,6 +10,9 @@ export const styles = (theme) => ({
   content: {
     flex: "1 0 auto",
   },
+  box: {
+    width: "500%",
+  },
   rectangle: {
     width: "68px",
     height: "90px",

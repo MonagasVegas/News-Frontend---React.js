@@ -4,11 +4,24 @@ import { Grid, withStyles } from "@material-ui/core";
 import { styles } from "./constants";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
+import { setNewsLetters } from '../../Redux/Actions/_actionNews';
+import {openMyFaves } from '../../Redux/Actions/_actionNews';
+
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  handleNews = () => {
+    this.props.setNewsLetters(true);
+    this.props.openMyFaves(false);
+  };
+
+  handleClick = () => {
+   this.props.openMyFaves(true);
+   this.props.setNewsLetters(false);
   }
 
   render() {
@@ -22,11 +35,16 @@ class Home extends Component {
             color="primary"
             aria-label="large outlined primary button group"
           >
-            <Button color="primary">
+            <Button 
+             color="primary"
+             onClick={this.handleNews}  
+            >
               {" "}
               &nbsp;&nbsp; All &nbsp;&nbsp;&nbsp;
             </Button>
-            <Button>My Faves</Button>
+            <Button
+             onClick={this.handleClick}
+            >My Faves</Button>
           </ButtonGroup>
         </Grid>
         <Grid item xs={12}>
@@ -42,4 +60,8 @@ function mapStateToProps(state) {
   return {};
 }
 
-export default connect(mapStateToProps, {})(home);
+export default connect(mapStateToProps, {
+  openMyFaves,
+  setNewsLetters,
+
+})(home);

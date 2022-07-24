@@ -120,7 +120,7 @@ class NewsLetters extends Component {
           <Grid item xs={12} sm={5} md={5} lg={5}>
             <Card className={classes.root}>
               <div>
-                <CardContent>
+                <CardContent  className={classes.box} >
                   <Typography variant="subtitle1" color="textSecondary">
                     <AiOutlineClockCircle />
                     &nbsp;&nbsp; 2 hours ago by author

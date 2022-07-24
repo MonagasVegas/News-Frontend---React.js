@@ -1,14 +1,17 @@
 import { combineReducers } from 'redux';
 import { RESET_ALL} from '../constants';
 
+import { newsReducer } from './_reducerNews';
+
+
 
 const appReducer = combineReducers({
-  
+    newsReducer,
 
 });
 
 const resetState = combineReducers({
-    
+    newsReducer,
 });
 
 
