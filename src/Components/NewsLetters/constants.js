@@ -22,7 +22,6 @@ export const styles = (theme) => ({
     height: "22px",
     margin: "22px",
     objectFit: "contain",
-    position: "relative",
   },
 
   rectangle1:{

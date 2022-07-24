@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Dashboard from "../Components/Dashboard";
-import NewsLetters from "../Components/NewsLetters";
+import MyFaves from '../Components/NewsLetters/MyFaves';
 
 class routes extends Component {
   render() {
@@ -10,7 +10,7 @@ class routes extends Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/das" element={<NewsLetters />} />
+          <Route path="/das" element={<MyFaves />} />
         </Routes>
       </BrowserRouter>
     );
