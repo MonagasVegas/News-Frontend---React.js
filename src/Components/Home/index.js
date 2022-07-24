@@ -13,16 +13,25 @@ class Home extends Component {
 
   render() {
     return (
-      <Grid container>
-        <Grid item xs={5} sm={5} md={5} lg={5}   />
+      <Grid container spacing={3}>
+        <Grid item xs={2} sm={5} md={5} lg={5} />
 
-        <Grid item xs={7}  sm={7} md={7} lg={7}  >
-          <ButtonGroup size="large" color="primary" aria-label="large outlined primary button group">
-            <Button color="primary"> &nbsp;&nbsp; All &nbsp;&nbsp;&nbsp;</Button>
+        <Grid item xs={10} sm={7} md={7} lg={7}>
+          <ButtonGroup
+            size="large"
+            color="primary"
+            aria-label="large outlined primary button group"
+          >
+            <Button color="primary">
+              {" "}
+              &nbsp;&nbsp; All &nbsp;&nbsp;&nbsp;
+            </Button>
             <Button>My Faves</Button>
           </ButtonGroup>
         </Grid>
-   
+        <Grid item xs={12}>
+          <br />
+        </Grid>
       </Grid>
     );
   }

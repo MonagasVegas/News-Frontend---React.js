@@ -15,13 +15,15 @@ class PaginationNews extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.pagi}>
-        <Grid container>
-          <Grid item xs={1} sm={5} md={5} lg={5}>
-          </Grid>
-          <Grid item xs={10} sm={4} md={4} lg={4}>
+        <Grid container spacing={3}>
+          <Grid item  sm={5} md={5} lg={5}></Grid>
+          <Grid item xs={12} sm={4} md={4} lg={4}>
             <Pagination count={10} variant="outlined" shape="rounded" />
           </Grid>
-          <Grid item xs={1} sm={3} md={3} lg={3} />
+          <Grid item  sm={3} md={3} lg={3} />
+          <Grid item xs={12}>
+            <br /><br />
+          </Grid>
         </Grid>
       </div>
     );

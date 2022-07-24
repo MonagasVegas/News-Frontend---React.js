@@ -15,10 +15,10 @@ class Header extends Component {
 
     return (
       <div className={classes.root}>
-        <Grid container>
+        <Grid container >
           <Grid item xs={2} sm={4} md={4} lg={4}></Grid>
           <Grid item xs={6} sm={4} md={4} lg={4}>
-            <img src={imag1} alt="" className={classes.img} />
+            <img src={imag1} alt=""  className={classes.img}  />
           </Grid>
           <Grid item xs={4} sm={4} md={4} lg={4} />
         </Grid>

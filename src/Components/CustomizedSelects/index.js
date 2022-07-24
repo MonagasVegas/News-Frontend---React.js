@@ -11,12 +11,9 @@ import { FaReact } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { FaVuejs } from "react-icons/fa";
 
-
-
-
-const fontStyles1 = {color: 'red', fontSize: '20px'};
-const fontStyles2 = {color: '#4ad5ff', fontSize: '20px'};
-const fontStyles3 = {color: '#00c180', fontSize: '20px'};
+const fontStyles1 = { color: "red", fontSize: "20px" };
+const fontStyles2 = { color: "#4ad5ff", fontSize: "20px" };
+const fontStyles3 = { color: "#00c180", fontSize: "20px" };
 
 class CustomizedSelects extends Component {
   constructor(props) {
@@ -35,9 +32,9 @@ class CustomizedSelects extends Component {
 
     return (
       <div>
-        <Grid container>
-          <Grid item xs={2} sm={2} md={2} lg={2} />
-          <Grid item xs={4} sm={4} md={4} lg={4}>
+        <Grid container spacing={3}>
+          <Grid item xs={1} sm={2} md={2} lg={2} />
+          <Grid item xs={10} sm={4} md={4} lg={4}>
             <FormControl variant="outlined" className={classes.formControl}>
               <InputLabel id="demo-simple-select-outlined-label">
                 Select your news
@@ -50,22 +47,24 @@ class CustomizedSelects extends Component {
                 label="Age"
               >
                 <MenuItem value={30}>
-                  <FaAngular  style={fontStyles1} />
+                  <FaAngular style={fontStyles1} />
                   &nbsp;&nbsp; Angular
                 </MenuItem>
                 <MenuItem value={10}>
-                  <FaReact style={fontStyles2}    />
+                  <FaReact style={fontStyles2} />
                   &nbsp;&nbsp; Reacts
                 </MenuItem>
                 <MenuItem value={20}>
-                  
-                  <FaVuejs  style={fontStyles3} />
+                  <FaVuejs style={fontStyles3} />
                   &nbsp;&nbsp; Vuejs
                 </MenuItem>
               </Select>
             </FormControl>
           </Grid>
-          <Grid item xs={6} sm={6} md={6} lg={6} />
+          <Grid item xs={1} sm={6} md={6} lg={6} />
+          <Grid item xs={12}>
+            <br /><br />
+          </Grid>
         </Grid>
       </div>
     );

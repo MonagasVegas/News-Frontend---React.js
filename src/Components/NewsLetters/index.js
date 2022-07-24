@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 
 import img1 from "./img/1.png";
 import img2 from "./img/2.png";
+import { AiOutlineClockCircle } from "react-icons/ai";
 
 class NewsLetters extends Component {
   constructor(props) {
@@ -20,14 +21,15 @@ class NewsLetters extends Component {
     const { classes } = this.props;
     return (
       <div>
-        <Grid container spacing={3} >
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={1} md={1} lg={1} />
           <Grid item xs={12} sm={5} md={5} lg={5}>
             <Card className={classes.root}>
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    3 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp; 3 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Yes, React is taking over front-end development. The
@@ -36,7 +38,7 @@ class NewsLetters extends Component {
                 </CardContent>
               </div>
               <div className={classes.rectangle}>
-                <div >
+                <div>
                   <img src={img2} alt="" className={classes.imag} />
                 </div>
               </div>
@@ -48,7 +50,8 @@ class NewsLetters extends Component {
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    3 hours ago by author
+                  <AiOutlineClockCircle />
+                    &nbsp;&nbsp; 3 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Yes, React is taking over front-end development. The
@@ -66,14 +69,15 @@ class NewsLetters extends Component {
           <Grid item xs={12} sm={1} md={1} lg={1} />
         </Grid>
 
-        <Grid container spacing={3} >
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={1} md={1} lg={1} />
           <Grid item xs={12} sm={5} md={5} lg={5}>
             <Card className={classes.root}>
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    2 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp; 2 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Event-driven state management in React using Storeon
@@ -93,7 +97,8 @@ class NewsLetters extends Component {
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    4 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp; 4 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Progressive Web Apps with React.js: Part I—Introduction
@@ -110,14 +115,15 @@ class NewsLetters extends Component {
           <Grid item xs={12} sm={1} md={1} lg={1} />
         </Grid>
 
-        <Grid container spacing={3} >
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={1} md={1} lg={1} />
           <Grid item xs={12} sm={5} md={5} lg={5}>
             <Card className={classes.root}>
-              <div >
+              <div>
                 <CardContent>
                   <Typography variant="subtitle1" color="textSecondary">
-                    2 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp; 2 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     From chaos to free will
@@ -137,21 +143,18 @@ class NewsLetters extends Component {
               <div className={classes.details}>
                 <CardContent className={classes.contentOpasi}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    4 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp;  4 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Realize for React for Visualizing State flow and component
                     hierarchy
                   </Typography>
-                  {/* <p>
-                  Realize for React for Visualizing State flow and component
-                    hierarchy
-                  </p> */}
                 </CardContent>
               </div>
               <CardMedia className={classes.rectangle2}>
                 <div>
-                  <img src={img2} alt="" className={classes.imag} />
+                  <img src={img2} alt="" className={classes.imagenOpa} />
                 </div>
               </CardMedia>
             </Card>
@@ -159,14 +162,15 @@ class NewsLetters extends Component {
           <Grid item xs={12} sm={1} md={1} lg={1} />
         </Grid>
 
-        <Grid container spacing={3} >
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={1} md={1} lg={1} />
           <Grid item xs={12} sm={5} md={5} lg={5}>
             <Card className={classes.root}>
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    3 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp;  3 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     All the fundamental React.js concepts, jammed into this
@@ -187,7 +191,8 @@ class NewsLetters extends Component {
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <Typography variant="subtitle1" color="textSecondary">
-                    4 hours ago by author
+                    <AiOutlineClockCircle />
+                    &nbsp;&nbsp;  4 hours ago by author
                   </Typography>
                   <Typography component="h6" variant="h6">
                     Realize for React for Visualizing State flow and component

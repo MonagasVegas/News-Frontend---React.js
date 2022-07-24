@@ -7,6 +7,8 @@ import Header from "../Header";
 import Home from "../Home";
 import CustomizedSelects from "../CustomizedSelects";
 import PaginationNews from "../PaginationNews";
+import NewsLetters from '../NewsLetters';
+import MyFaves from '../NewsLetters/MyFaves';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -19,8 +21,10 @@ class Dashboard extends Component {
       <Grid container>
           <Header />
           <Home />
-          <br /><br /><br /><br />
           <CustomizedSelects />
+          <NewsLetters />
+          <br/><br/>
+          <MyFaves />
         <Grid item xs={12}>
           <PaginationNews />
         </Grid>

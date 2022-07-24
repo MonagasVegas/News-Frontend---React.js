@@ -23,6 +23,13 @@ export const styles = (theme) => ({
     margin: "22px",
     objectFit: "contain",
   },
+  imagenOpa:{
+    width: "24px",
+    height: "22px",
+    margin: "22px",
+    objectFit: "contain",
+    opacity: "0.5",
+  },
 
   rectangle1:{
     width: "68px",
